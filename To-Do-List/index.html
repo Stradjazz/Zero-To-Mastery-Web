@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Manrope:400,700&display=swap" rel="stylesheet">
+	<title>Javascript + DOM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="site-wrapper">
+		<header>
+			<h1 class="site-title">
+				<i class="fas fa-shopping-basket"></i>
+				Shopping<span>List</span>
+			</h1>
+			<ul class="underline-deco">
+				<li class="deco line1"></li>
+				<li class="deco line2"></li>
+				<li class="deco line3"></li>
+			</ul>
+		</header>
+		<ol class="instructions-area cover">
+			<h2>How to get it done:</h2>
+			<li class="instruction">
+				Click on <strong>"Enter items!"</strong> , type what you need and click on the <strong>Add</strong> button.
+			</li>
+			<li class="instruction">
+				You can remove items by clicking on the <strong>X</strong> button.
+			</li>
+			<li class="instruction">
+				You can mark items as done by clicking on the items.
+			</li>
+		</ol>
+		<main>
+			<div class="list-wrapper">
+				<input id="userinput" type="text" placeholder="Enter items!">
+				<button id="add-item">
+					<i class="fas fa-cart-plus"></i>	
+					Add
+				</button>
+				<ul class="shopping-list" id="shopping-list">	
+					<!-- Items are being added through DOM -->
+				</ul>
+			</div>
+		</main>
+		<footer>
+			<!-- Still has to be made -->
+		</footer>
+	</div>
+	<script src="https://kit.fontawesome.com/044c544c52.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
